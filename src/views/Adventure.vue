@@ -360,8 +360,6 @@ export default {
       this.cardSpread[i].image = card.image;
       this.cardSpread[i].reversed = card.reversed;
       this.cardSpread[i].story = card.story;
-      //this.storyTemplate[i+1] = this.cardSpread[i].story
-      //this.getNextSentence(i+1)
     },
 
     // Function to draw random card 
@@ -472,6 +470,8 @@ export default {
         ].toUpperCase();
     },
 
+
+    // Make new card spread by replacing all card 
     makeSpread() {
       this.cardSpread = [];
       this.cardStory = [];
